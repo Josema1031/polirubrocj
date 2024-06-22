@@ -109,10 +109,15 @@ nav {
     color: #333;
 }
 
-.card label,
+.card label{
+    color: black;
+  
+}
+
 .card input,
 .card button {
     margin: 5px 0;
+
 }
 
 .add-to-cart {
@@ -128,11 +133,10 @@ nav {
 }
 
 .cart {
-    position:sticky;
+    
     background-color: black;
     padding: 20px;
     margin: 20px;
-
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -174,7 +178,7 @@ h1 {
     color: red;
     text-decoration: underline;
     font-size: 3.5em;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     font-weight: bolder;
 }
 
@@ -186,5 +190,59 @@ h1 {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+    .submenu {
+    
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .submenu a {
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+        
+    }
+
+    .card {
+        width: 40%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
     }
 }

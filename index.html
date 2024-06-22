@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online - Bazar e Indumentaria</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <h1>POLIRUBRO CJ</h1>
     <header>
         <nav>
             <ul class="menu">
@@ -22,10 +25,10 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <h1>POLIRUBRO CJ</h1>
-        
+
+
         <section class="products">
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
@@ -71,11 +74,11 @@
                 <p class="descuento">PRODUCTO</p>
                 <img src="imagenes/WhatsApp Image 2021-07-19 at 23.15.51 (1).jpeg" alt="Producto 2">
                 <h3>Termo Deportivo</h3>
-                <p> Capacidad 500  MLM</p>
+                <p> Capacidad 500 MLM</p>
                 <p class="price">Precio: $800</p>
                 <label for="quantity5">Cantidad:</label>
-                <input type="number" id="quantity4" name="quantity4" min="1" value="1">
-                <button class="add-to-cart" data-product-id="4">Añadir al carrito</button>
+                <input type="number" id="quantity5" name="quantity5" min="1" value="1">
+                <button class="add-to-cart" data-product-id="5">Añadir al carrito</button>
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
@@ -84,8 +87,8 @@
                 <p>5 Piezas de Azaderas de vidrio de alta calidad</p>
                 <p class="price">Precio: $1200</p>
                 <label for="quantity6">Cantidad:</label>
-                <input type="number" id="quantity4" name="quantity4" min="1" value="1">
-                <button class="add-to-cart" data-product-id="4">Añadir al carrito</button>
+                <input type="number" id="quantity6" name="quantity6" min="1" value="1">
+                <button class="add-to-cart" data-product-id="6">Añadir al carrito</button>
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
@@ -94,8 +97,8 @@
                 <p>10 piezas de porcelana</p>
                 <p class="price">Precio: $1000</p>
                 <label for="quantity7">Cantidad:</label>
-                <input type="number" id="quantity4" name="quantity4" min="1" value="1">
-                <button class="add-to-cart" data-product-id="4">Añadir al carrito</button>
+                <input type="number" id="quantity7" name="quantity7" min="1" value="1">
+                <button class="add-to-cart" data-product-id="7">Añadir al carrito</button>
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
@@ -104,21 +107,24 @@
                 <p>6 piezas de porcelana</p>
                 <p class="price">Precio: $800</p>
                 <label for="quantity8">Cantidad:</label>
-                <input type="number" id="quantity4" name="quantity4" min="1" value="1">
-                <button class="add-to-cart" data-product-id="4">Añadir al carrito</button>
+                <input type="number" id="quantity8" name="quantity8" min="1" value="1">
+                <button class="add-to-cart" data-product-id="8">Añadir al carrito</button>
             </div>
         </section>
 
         <!-- Sección del carrito -->
-        <section class="cart">
+        <section class="cart fixed-cart">
             <h2>Carrito de Compras</h2>
             <ul id="cart-items"></ul>
             <p id="cart-total">Total: $0</p>
-            <button id="checkout">FINALIZAR COMPRA</button>
+            <button id="checkout">Finalizar Compra</button>
+            <button id="cancel">Cancelar Compra</button>
+            <button id="modify">Actualizar Compra</button>
+            <button id="complaint">Reclamo</button>
         </section>
     </main>
 
     <script src="java/script.js"></script>
 </body>
-</html>
 
+</html>
