@@ -1,0 +1,1 @@
+este proyecto tiene como fin visualizar los producto que estan a la venta.-git 
