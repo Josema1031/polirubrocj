@@ -1,0 +1,20 @@
+
+h1 {
+    text-align: center;
+    animation: zoomIn 1s ease-in-out;
+    color: red;
+    text-decoration: underline;
+    font-size: 3.5em;
+    margin-bottom: 45px;
+    font-weight: bolder;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
